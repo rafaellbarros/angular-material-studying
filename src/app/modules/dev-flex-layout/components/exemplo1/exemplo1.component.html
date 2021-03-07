@@ -1,0 +1,23 @@
+<!-- 
+fxLayout="row" === display: flex; flex-direction: row
+fxLayoutAlign="center center" === justify-content: center; align-items: center
+fxFlex="50%" === flex-basis: 50%
+-->
+
+<div class="purple" fxLayout="row" fxLayoutAlign="center center">
+  <div class="orange" fxFlex="50%">Flex item 1</div>
+  <div class="yellow" fxFlex="50%">Flex item 1</div>
+</div>
+
+<br />
+
+<div
+  class="gray"
+  fxLayout="column"
+  fxLayout.gt-sm="row"
+  fxLayoutAlign="start center"
+  fxLayoutAlign.gt-sm="center start"
+>
+  <div class="yellow" fxFlex="50%" fxFlex.gt-sm="75%">Item 1</div>
+  <div class="orange" fxFlex="50%" fxFlex.gt-sm="25%">Item 2</div>
+</div>
