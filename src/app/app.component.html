@@ -1,6 +1,17 @@
 <div fxLayout="column" fxFlexFill>
   <header></header>
-  <div fxFlex>
-    <router-outlet></router-outlet>
-  </div>
+  <main flex>
+    <div
+      fxLayout="row"
+      fxLayout.xs="column"
+      fxLayoutWrap
+      fxLayoutGap="0.5%"
+      fxLayoutAlign="center"
+    >
+      <mat-card fxFlex="100%">
+        <router-outlet></router-outlet>
+      </mat-card>
+    </div>
+  </main>
+  <footer fxFlexOffset="auto"></footer>
 </div>
